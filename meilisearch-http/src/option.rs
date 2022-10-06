@@ -26,7 +26,7 @@ pub struct Opt {
     pub db_path: PathBuf,
 
     /// The address on which the http server will listen.
-    #[clap(long, env = "MEILI_HTTP_ADDR", default_value = "127.0.0.1:7700")]
+    #[clap(long, env = "MEILI_HTTP_ADDR", default_value = "localhost:7700")]
     pub http_addr: String,
 
     /// The master key allowing you to do everything on the server.
